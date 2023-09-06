@@ -127,6 +127,16 @@ article > h3 {
     color: var(--cor4);
 }
 
+article p a {
+    text-decoration: none;
+    color: blue;
+}
+
+article p a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
 img {
     width: 100%;
 }
@@ -173,8 +183,18 @@ aside > ul {
     text-decoration: none;
 }
 
+aside ul li a {
+    text-decoration: none;
+    color:  white;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
 footer {
-    background-color: var(--cor4);
+    background-color: var(--cor5);
     color: white;
     font-family: var(--fonte-destaque);
     text-align: center;
@@ -190,5 +210,5 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: var(--cor2);
+    color: var(--cor3);
 }
