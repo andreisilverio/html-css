@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Você usuário do meu site, tente abrir o site em vários dispositivos ou aumente e diminua no seu navegador. </p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-300.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-700.png" type="image/png">
+        <img src="imagens/foto-1000.png" alt="Imagem Flexível">
+    </picture>
+
+    <p><a href="teste/site2.html" target="_self" rel="next">SITE 2</a></p>
+
+    <h1>Reproduzindo Áudio</h1>
+    <h2>ATENÇÃO: Quidado Com Direitos Autorais</h2>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/ily-baby-dyalla.mp3" type="audio/mpeg">
+        <source src="midia/soulicious - dyalla.mp3" type="audio/mpeg">
+    </audio>
+    <p>Caso o seu navegador não for compátivel com áudio. <a href="midia/ily-baby-dyalla.mp3">Clique aqui para baixar o arquivo</a></p>
+</body>
+</html>
