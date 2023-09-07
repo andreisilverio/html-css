@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Old';
-    src: url('vintage.otf.otf') format('opentype');
+    src: url('../fonte/vintage.otf.otf') format('opentype');
     font-weight: normal;
 }
 
