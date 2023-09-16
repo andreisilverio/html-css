@@ -14,11 +14,11 @@
 }
 
 :root {
-    --cor0 :#FFFFFF;
-    --cor1 :#999999;
-    --cor2 :#292F3D;
-    --cor3 :#4D4D4D;
-    --cor4 :#000000;
+    --cor0 :#6FC0E0;
+    --cor1 :#028FC7;
+    --cor2 :#016A94;
+    --cor3 :#013347;
+    --cor4 :#445054;
 
     --fonte-padrão : Arial, Helvetica, sans-serif;
     --fonte-títulos :  'future', cursive;
@@ -29,13 +29,11 @@ body {
     text-align: justify;
     margin: auto;
     font-family: var(--fonte-padrão);
-    background-color: var(--cor2)
-    
-    
+    background-color: var(--cor0)
 }
 
 nav {
-    background-color: var(--cor0);
+    background-color: var(--cor3);
     padding: 50px;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -45,9 +43,15 @@ nav {
 nav a {
     padding: 20px;
     text-decoration: none;
-    color: black;
+    color: var(--cor1);
     margin: 20px;
     font-size: 1.5em;
+    transition-duration: .5s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--cor4)
 }
 
 main {
@@ -71,6 +75,7 @@ main h1 {
     margin: 10px auto 10px auto;
     font-size: 2.5em;
     font-family: var(--fonte-títulos);
+    color: var(--cor2);
 }
 
 .sub {
@@ -78,16 +83,30 @@ main h1 {
     font-size: 2em;
     padding: 10px;
     margin: 10px auto 10px auto;
+    color: white;
 }
 
 h2 {
+    
+    color: var(--cor2);
     text-indent: 10px;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     margin: 20px auto 20px auto;
     font-family: var(--fonte-títulos);
     font-size: 3em
 }
+
+h2:hover {
+    color: var(--cor4);
+    text-decoration: underline;
+   
+}
+
+h2 li {
+    list-style-type: '\2714';
+}
+
 
 main p {
     padding: 10px;
@@ -95,16 +114,21 @@ main p {
 }
 
 main a {
-    color: #FFFFFF;
+    color: white;
     margin: 60px;
     text-decoration: none;
     font-size: 1.5em;
     padding: 40px;
-    
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor2)
 }
 
 footer {
     text-align: right;
-    margin: 10px;
+    margin: 20px auto 20px auto;
+    padding: 20px;
 }
 
