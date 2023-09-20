@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adaptando uma imagem dentro do site</title>
+    <title>imagem fixa no site</title>
     <style>
         body {
             height: 100vh;
@@ -12,9 +12,19 @@
             background-size: cover;
             background-repeat:  no-repeat;
             background-position: center center;
+            background-attachment: fixed;
+
+            background: black 'imagens/wallpaper002.jpg' no-repeat center center fixed;
+            background-size: cover;
         }
 
+        /* Shorthand- Background
+        color > image > size > repeat > position > attachment
+        
+        size não funciona no navegador*/
+
         main {
+            max-width: 400px;
             background-color: gray;
             padding: 10px;
             margin: auto;
@@ -22,6 +32,7 @@
             border-radius: 15px;
             width: 400px;
         }
+
     </style>
 </head>
 <body>
@@ -30,6 +41,9 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint autem modi accusantium esse quas eum atque. In voluptates ullam asperiores voluptatem minima saepe, aut labore laboriosam porro facere quis enim.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, officiis. Quam asperiores minima vitae vero, dignissimos nobis tempore ad qui in, at impedit, nesciunt aliquam quis possimus velit minus nulla.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cum minus delectus tenetur porro quam aspernatur, inventore voluptas expedita impedit. Similique eius tempora nam reprehenderit, officiis hic ipsum! Aperiam, autem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quaerat, placeat perferendis cumque modi corporis aliquam facere veniam eos asperiores. Nostrum vitae, et amet reiciendis voluptas aperiam. Nihil, perferendis et?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis officiis aliquam aliquid, sunt quae praesentium quos ipsam harum illum tenetur maiores autem dicta aspernatur facere modi animi magni quis at?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nesciunt ipsa ea voluptatem nam tempora, totam provident vel repellendus esse officiis sit id? Repellendus magnam aliquam iusto quam doloremque eius?</p>
     </main>
 </body>
 </html>
