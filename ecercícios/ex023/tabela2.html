@@ -11,11 +11,31 @@
             border-collapse: collapse;
             font-family: Arial, Helvetica, sans-serif;
             border: 1px solid black;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.1em;
+            font-weight: bold;
+            background-color: lightgrey;
+            padding: 10px;
+            border: 1px solid black;
         }
 
         thead, tfoot {
             background-color: grey;
             border: 1px solid black;
+        }
+
+        thead tr th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        tbody tr:nth-child(even) {
+             background-color: black;
+             color: white;
         }
 
         th {
@@ -46,18 +66,31 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
          TABLE
-           THEAD (TR,TD,TH)
-               TBODY (TR,TD,TH)
-                 TFOOT (TR,TD,TH)
+          CAPTION (LEGENDA DA TABELA)
+             THEAD (TR,TD,TH)
+                  TBODY (TR,TD,TH)
+                     TFOOT (TR,TD,TH)
     -->
 
-    <h1>Lista de unidades federativas do Brasil por população</h1>
+    <!--
+        ESCOPE COL E ROW
+        COL (MESMA COLUNA)
+        ROW (MESMA LINHA)
+    -->
+
+    <!--
+        CABEÇALHO FIXO NA TABELA
+
+    -->
 
     <table>
+        <caption>
+            Lista de unidades federativas do Brasil por população
+        </caption>
         <thead>
-            <th>Posição</th>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Posição</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </thead>
 
 
@@ -121,13 +154,19 @@
                 <td class="est">Santa Catarina</td>
                 <td class="pop">7 609 601</td> 
             </tr>
+
+            <tr>
+                <td class="pos">11</td>
+                <td class="est">Goiás</td>
+                <td class="pop">7 055 228</td> 
+            </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>2023</th>
-                <th>Total de População</th>
-                <th class="pop">151.049.408</th>
+                <th scope="row">#</th>
+                <th scope="row">Total de População</th>
+                <th class="pop" scope="row">151.049.408</th>
             </tr>
         </tfoot>
     </table>
