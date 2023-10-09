@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Tabela Grande</title>
+    <style>
+        table {
+            width: 500px;
+            height: 500px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.1em;
+            font-weight: bold;
+            background-color: lightgrey;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            border: 1px solid black;
+        }
+
+        thead tr th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        tbody tr:nth-child(even) {
+             background-color: black;
+             color: white;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .pos {
+            text-align: center;
+        }
+
+        .est {
+            text-align: center;
+        }
+
+        .pop {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+
+        <colgroup>
+            <col style="background-color: darkblue;">
+            <col>
+            <col>
+        </colgroup>
+        <caption>
+            Lista de unidades federativas do Brasil por população
+        </caption>
+        <thead>
+            <th scope="col">Posição</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td class="pos">1</td>
+                <td class="est">São Paulo</td>
+                <td class="pop">44 420 459</td>
+            </tr>
+
+            <tr>
+                <td class="pos">2</td>
+                <td class="est">Minas Gerais</td>
+                <td class="pop">20 538 718</td>
+            </tr>
+
+            <tr>
+                <td class="pos">3</td>
+                <td class="est">Rio de Janeiro</td>
+                <td class="pop">16 054 524</td> 
+            </tr>
+
+            <tr>
+                <td class="pos">4</td>
+                <td class="est">Bahia</td>
+                <td class="pop">14 136 417</td> 
+            </tr>
+
+            <tr>
+                <td class="pos">5</td>
+                <td class="est">Paraná</td>
+                <td class="pop">11 443 208</td> 
+            </tr>
+
+            <tr>
+                <td class="pos">6</td>
+                <td class="est">Rio Grande do Sul</td>
+                <td class="pop">10 880 506</td> 
+            </tr>
+
+            <tr>
+                <td class="pos">7</td>
+                <td class="est">Pernambuco</td>
+                <td class="pop">9 058 155</td> 
+            </tr>
+
+            <tr>
+                <td class="pos">8</td>
+                <td class="est">Ceará</td>
+                <td class="pop">8 791 688</td> 
+            </tr>
+
+            <tr>
+                <td class="pos">9</td>
+                <td class="est">Pará</td>
+                <td class="pop">8 116 132</td> 
+            </tr>
+
+            <tr>
+                <td class="pos">10</td>
+                <td class="est">Santa Catarina</td>
+                <td class="pop">7 609 601</td> 
+            </tr>
+
+            <tr>
+                <td class="pos">11</td>
+                <td class="est">Goiás</td>
+                <td class="pop">7 055 228</td> 
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="2">Total de População</th>
+                <th class="pop" scope="row">151.049.408</th>
+            </tr>
+        </tfoot>
+</body>
+</html>
