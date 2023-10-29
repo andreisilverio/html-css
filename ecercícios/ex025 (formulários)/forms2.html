@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!--
+        Autocomplete em form: desligar ou ligar a sugestão de nome
+
+        Minlenght e Maxlenght: tamanho mínimo e  maxímo de letras na caixa sem rolagem
+
+        Required: aviso dizendo que é obrigatório preencher a caixa
+
+        Size: aumentar ou diminuir o tamanho da caixa
+
+        Placeholders: aviso escrito uma mensagem antes do usuário preencher a caixa
+    -->
+
+    <h1>Criando caixas de texto e de senha</h1>
+    
+    <form action="cadastro.php" method="post" autocomplete="off"></form>
+
+    <p>
+        <label for="usu"></label>
+        <input type="text" name="Usuário" id="Usu" minlength="10" maxlength="20" size="10" required placeholder="Nome do Usuário">
+    </p>
+
+    <p>
+        <label for="pass"></label>
+        <input type="password" name="Senha" id="pass" minlength="8" maxlength="16" size="8" required placeholder="Senha do Usuário">
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
