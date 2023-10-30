@@ -24,25 +24,35 @@
         Size: aumentar ou diminuir o tamanho da caixa
 
         Placeholders: aviso escrito uma mensagem antes do usuário preencher a caixa
+
+        Mim e Max: tamanho mínimo e maxímo de números na caixa sem rolagem
+
+        Step: quanto em quanto o número muda dentro da caixa, aceito só em input number
+
+        Value: auto preset na caixa, essa função desativa o placeholder
+
     -->
 
     <h1>Criando caixas de texto e de senha</h1>
     
-    <form action="cadastro.php" method="post" autocomplete="off"></form>
+    <form action="cadastro.php" method="post" autocomplete="off">
 
-    <p>
-        <label for="usu"></label>
-        <input type="text" name="Usuário" id="Usu" minlength="10" maxlength="20" size="10" required placeholder="Nome do Usuário">
-    </p>
+        <p>
+            <label for="usu">Usuário</label>
+            <input type="text" name="Usuário" id="Usu" minlength="10" maxlength="20" size="10" required placeholder="Nome do Usuário">
+        </p>
 
-    <p>
-        <label for="pass"></label>
-        <input type="password" name="Senha" id="pass" minlength="8" maxlength="16" size="8" required placeholder="Senha do Usuário">
-    </p>
+        <p>
+            <label for="pass">Senha</label>
+            <input type="password" name="Senha" id="pass" minlength="8" maxlength="16" size="8" required placeholder="Senha do Usuário">
+        </p>
 
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </form>
+
 </body>
 </html>
