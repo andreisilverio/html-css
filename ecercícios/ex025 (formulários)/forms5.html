@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Checkbox e Radio button </h1>
+
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Games Favoritos</legend>
+            <input type="checkbox" name="Forza Horizon" id="fh">
+            <label for="fh">Forza Horizon</label><br>
+            <input type="checkbox" name="Counter-Strike" id="cs" checked>
+            <label for="cs">Counter-Strike 2</label><br>
+            <input type="checkbox" name="Fifa" id="fifa">
+            <label for="fifa">Fifa 23</label><br>
+            <input type="checkbox" name="Nba" id="nba">
+            <label for="nba">Nba 2k</label><br>
+            <input type="checkbox" name="Gta" id="gta">
+            <label for="gta">Gta 5</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <!--
+                Todos botões de rádio necessitam ter o mesmo 'name'
+            -->
+        
+            <input type="radio" name="sexo" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
