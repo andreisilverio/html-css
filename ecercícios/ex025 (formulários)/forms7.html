@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h1>Select, datalist e textarea</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="idioma">Insira seu Idioma</label>
+            <select name="idioma" id="idioma">
+
+                <option value="" selected>Escolha seu idioma:</option>
+                <optgroup label="Idiomas mais falados">
+                        <option value="IN">Inglês</option>
+                        <option value="MA">Mandarim</option>
+                        <option value="ES">Espanhol</option>
+                        <option value="FR">Francês</option>
+                        <option value="ÁR">Árabe</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="paises">Insira seu páis:</label>
+            <input type="text" name="Paises" id="paises" list="lstpaises"> 
+
+            <datalist id="lstpaises">
+                <option value="IN">Inglaterra</option>
+                <option value="MA">China</option>
+                <option value="ES">Espanha</option>
+                <option value="FR">França</option>
+                <option value="ÁR">Árabia Saudita</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="msg">Insira sua mensagem como visitante do site:</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </form>
+</body>
+</html>
