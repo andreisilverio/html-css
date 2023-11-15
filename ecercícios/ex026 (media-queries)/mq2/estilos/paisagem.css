@@ -1,3 +1,15 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
-/* Configurações posição paisagem */
+/* Configurações modo paisagem */
+
+body {
+    background-image: url(../imagens/paisagem.jpg);
+    background-position: left bottom;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    background-color: darkorange;
+    border: 1px solid rgba(0, 0, 0, 0.404);
+}
