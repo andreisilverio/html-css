@@ -1,0 +1,8 @@
+@charset "UTF-8"
+
+/* Configurações posição retrato */
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(../imagens/cev-portrait.jpg);
+}
