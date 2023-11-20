@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints 
+-----------------------------
+Pequenas telas: até 600px
+Celular: de 601px até 768px
+Tablet: 769px até 992px
+Desktop: 993px até 1200px
+Grandes telas: acima de 1201px
+*/
+
+
+
+@media print { /* Impressora */
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+    
+    main:after {
+        content: 'Essa impressão foi feita através do site github.com/andreisilverio';
+        text-decoration: overline;
+    }
+    h1 {
+        text-shadow: none;
+        font-size: 2em;
+        color: black;
+    }
+
+    #Celular {display: none;}
+    #Tablet {display: none;}
+    #Print {display: block;}
+    #PC {display: none;}
+    #TV {display: none;}
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width:992px) { /* Tablet */
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+    #Celular {display: none;}
+    #Tablet {display: block;}
+    #Print {display: none;}
+    #PC {display: none;}
+    #TV {display: none;}
+
+}
+
+
+
+@media screen and (min-width:993px) and (max-width:1200px) { /* PC */
+
+    body {
+        background-image: url(../imagens/back-pc.jpg)
+    }
+    
+    main {
+        width: 600px;
+    }
+
+    #Celular {display: none;}
+    #Tablet {display: none;}
+    #Print {display: none;}
+    #PC {display: block;}
+    #TV {display: none;}
+
+} 
+
+
+
+@media screen and (min-width:1201px) { /* TV */
+   
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #Celular {display: none;}
+    #Tablet {display: none;}
+    #Print {display: none;}
+    #PC {display: none;}
+    #TV {display: block;}
+
+}
