@@ -108,4 +108,31 @@ footer h3 a:hover {
     text-decoration: underline;
     color: darkred;
     transition: 1s;
+} 
+
+@media screen and (min-width:768px) {
+
+    #burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        text-align: center;
+      
+    }
+
+    menu ul li {
+        display: inline-block;
+       
+      
+    }
+
+    menu ul li a {
+        border-radius: 5px;
+    }
+
+    main {
+        width: 768px;
+    }
 }
